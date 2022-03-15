@@ -1,0 +1,143 @@
+.container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator {
+    /* background-color: #1993e4; */
+    width: 30%;
+    min-height: 484px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background:white
+}
+
+.form-control {
+    height: 50px;
+    font-size: 25px;
+    width:83%;
+    border:1px solid black;
+    border-radius: 10px;
+}
+.display ,.key-container, .display1{
+    display:flex;
+    justify-content: center;
+    /* padding:20px; */
+    
+}
+.btn{
+    /* padding:20px; */
+    width: 90px;
+    height:60px;
+    font-size: 20px;
+    margin-bottom:5px;
+    background:none;
+    border:1.5px solid rgb(23, 177, 74);
+    border-radius: 20px;
+}
+.btn1{
+    background:none;
+    border:1.5px solid black;
+    
+}
+.btn2{
+    background:rgb(0, 119, 255);
+    cursor: pointer;
+    color:white;
+    width:100%;
+    border:none;
+    border-radius: 10px;
+}
+.btn4{
+    background:red;
+    cursor: pointer;
+    border:none;
+
+    color:white;
+    border-radius: 10px;
+}
+.btn5{
+    background:white;
+    color:black
+}
+h3{
+    text-align: center;
+}
+#historyDiv{
+    position:absolute;
+    top:220px;
+    right:300px;
+    width:20%;background:rgb(63, 166, 214);color:white;
+    height: 400px;
+    overflow-y: auto;
+    display: none;
+}
+#back{
+    width:30px;
+    height:30px;
+    background-color: white;
+    color:black;
+    border:none;
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-weight: 900;
+}
+#history li{
+list-style: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+#history li h2{
+    cursor: pointer;
+}
+#history li button{
+    width:30px;height:30px;margin-right: 20px;
+    background-color: red;
+    color:white;
+    font-weight: 910;
+    border:none;
+    cursor:pointer
+}
+
+#variableDiv{
+    position:absolute;
+    top:220px;
+    left:300px;
+    width:20%;background:rgb(63, 166, 214);color:white;
+    height: 400px;
+    overflow-y: auto;
+    /* display: none; */
+}
+.variable-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.variable-form input{
+    width:100px;
+    height:30px;   
+    margin-right: 10px; 
+    border:none
+}
+.variable-form button{
+    height:30px;
+    width: 50px;
+    background-color: white;
+    color:black;
+    border:none
+}
+#variables li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    }
+#variables li h2{
+    cursor: pointer;
+    margin-right: 10px;
+}

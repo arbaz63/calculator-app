@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Calculator</h1>
+<div >
+
+    <form id="calculator"onSubmit="return false;">
+        <div class="form-group">
+            <div class="display">
+                <input type="text" id="show" class="form-control" placeholder="Input here...">
+            </div>
+            <br>
+            <!-- <h3>Output</h3> -->
+            <div class="display1 ">
+                <input type="text" id="show-output" class="form-control" readonly size="18" placeholder="Output">
+            </div>
+            <br>
+        </div>
+        <div class="key-container">
+
+            <div class="keys">
+                <button type="button" class="btn" value="1" name="btn1" onclick="display(btn1.value)"> 1</button>
+                    <button type="button" class="btn" value="2" name="btn2" onclick="display(btn2.value)"> 2</button>
+                    <button type="button" class="btn" value="3" name="btn3" onclick="display(btn3.value)"> 3</button>
+                    <button type="button" class="btn btn4" value="C" name="clear" onclick="display(clear.value)">C</button>
+                    <button type="button" class="btn btn1 btn5" value="--> " name="backbtn" onclick="displayDivs()"> --> </button>
+                    
+                    <!-- <button type="button" class="btn btn1" value="%" name="btnpercent" onclick="percent(btnpercent)">%</button> -->
+                    
+                    <br />
+                    
+                    <button type="button" class="btn " value="4" name="btn4" onclick="display(btn4.value)"> 4</button>
+                    <button type="button" class="btn " value="5" name="btn5" onclick="display(btn5.value)"> 5</button>
+                    <button type="button" class="btn " value="6" name="btn6" onclick="display(btn6.value)"> 6</button>
+                    <button type="button" class="btn btn1" value="+" name="addbtn" onclick="display(addbtn.value)"> +</button>
+                    <button type="button" class="btn btn1" value="sin" name="btnSin" onclick="display(btnSin.value)">Sin</button>
+                    <!-- <button type="button" class="btn btn1" value="fact" name="btnfact" onclick="factorial(btnfact.value)">n!</button> -->
+                    
+                    <br />
+                    
+                    <button type="button" class="btn " value="7" name="btn7" onclick="display(btn7.value)"> 7</button>
+                    <button type="button" class="btn " value="8" name="btn8" onclick="display(btn8.value)"> 8</button>
+                    <button type="button" class="btn " value="9" name="btn9" onclick="display(btn9.value)"> 9</button>
+                    <button type="button" class="btn btn1" value="-" name="minusbtn" onclick="display(minusbtn.value)"> -</button>
+                    <button type="button" class="btn btn1" value="cos" name="btnCos" onclick="display(btnCos.value)">Cos</button>
+                    
+                    <br />
+                    
+                    <button type="button" class="btn " value="0" name="btn0" onclick="display(btn0.value)"> 0</button>
+                    <button type="button" class="btn btn1" value="E" name="dotbtn" onclick="display(dotbtn.value)"> E</button>
+                    <button type="button" class="btn btn1" value="sqrt" name="btnSqrt" onclick="display(btnSqrt.value)"> Sqrt</button>
+                    <button type="button" class="btn btn1" value="*" name="timesbtn" onclick="display(timesbtn.value)"> *</button>
+                    <button type="button" class="btn btn1" value="tan" name="btnTan" onclick="display(btnTan.value)">Tan</button>
+                    
+                    <br />
+                    <!-- <button type="button" class="btn btn1" value="+/-" name="plusminus" onclick="signChange()">+/-</button> -->
+                    <button type="button" class="btn btn1" value="(" name="btnOpen" onclick="display(btnOpen.value)">(</button>
+                    <button type="button" class="btn btn1" value=")" name="btnClose" onclick="display(btnClose.value)">)</button>
+                    <button type="button" class="btn btn1" value="PI" name="btnPI" onclick="display(btnPI.value)"> PI</button>
+                    <button type="button" class="btn btn1" value="/" name="dividebtn" onclick="display(dividebtn.value)"> /</button>
+                    <button type="button" class="btn btn1" value="**" name="power" onclick="display(power.value)">X^Y</button>
+                    
+                    <br />
+                    
+                    <!-- <button type="button" class="btn btn1" value="In" name="btnLog" onclick="log(btnLog)">Log </button>
+                        <button type="button" class="btn btn1" value=" , " name="btnExp" onclick="exponent(btnExp)"> EXP</button> -->
+                        
+                        <br />
+                        
+                        <button type="submit" class="btn btn2" value="=" name="equal" onclick="answer()">=</button>
+                    </div>
+                </div>
+            </form>
+        <div id="historyDiv"> 
+            <button id="back"onclick="hideHistory()"><--</button>
+            <h1>History</h1>
+            <ul id="history"></ul>
+        </div>
+        <div id="variableDiv">
+            <button id="back"onclick="hideVariable()">--></button>
+            <h1>Variables</h1>
+            <form class="variable-form" onSubmit="return false;">
+                <input type="text" name="vname" id="vName" placeholder="Name">
+                <input type="number" name="vname" id="vValue" placeholder="Value">
+                <button onclick="addVariable()">Add</button>
+            </form>
+            <ul id="variables"></ul>
+        </div>
+    </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
